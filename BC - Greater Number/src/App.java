@@ -8,17 +8,12 @@ public class App {
         int b = scan.nextInt();
         int c = scan.nextInt();
 
-        int maiorab, maior;
+        int maiorab, maiorabc;
 
         maiorab = (a+b+Math.abs(a-b))/2;
-        if(maiorab == a){
-            maior = (a+c+Math.abs(a-c))/2;
-            System.out.println(maior + " eh o maior");
-        }
-        else{
-            maior = (b+c+Math.abs(b-c))/2;
-            System.out.println(maior + " eh o maior");
-        }
+        maiorabc = (maiorab+c+Math.abs(maiorab-c))/2;
+        
+        System.out.println(maiorabc +  " eh o maior");
         System.out.println("");
 
     }
